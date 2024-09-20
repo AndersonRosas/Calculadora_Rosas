@@ -19,6 +19,7 @@ body {
   font-size: 1.1rem;
   text-align: center;
 }
+
 @keyframes color-change {
   0% {
     color: #111715;
@@ -42,30 +43,36 @@ body {
     opacity: 1;
   }
 }
+
 label {
   font-size: 1.5rem;
   font-family: Arial, sans-serif;
   animation: color-change 5s infinite;
 }
+
 input[type="number"] {
   font-size: 1.1rem;
   padding: 1em;
   width: 100%;
 }
+
 select {
   font-size: 1.1rem;
   padding: 1em;
   width: 100%;
 }
+
 button {
   font-size: 1.1rem;
   padding: 1em 2em;
 }
+
 #result h2 {
   font-size: 2rem;
   animation: color-change 2s infinite;
   box-shadow: 0 0 10px #111715;
 }
+
 @media (max-width: 768px) {
   body {
     font-size: 1.1rem;
