@@ -1,0 +1,76 @@
+body {
+  background-color: #888888;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.max-w-md {
+  max-width: 400px;
+  padding: 2em;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  text-align: center;
+}
+@keyframes color-change {
+  0% {
+    color: #111715;
+  }
+  50% {
+    color: #111715;
+  }
+  100% {
+    color: #111715;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+label {
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  animation: color-change 5s infinite;
+}
+input[type="number"] {
+  font-size: 1.1rem;
+  padding: 1em;
+  width: 100%;
+}
+select {
+  font-size: 1.1rem;
+  padding: 1em;
+  width: 100%;
+}
+button {
+  font-size: 1.1rem;
+  padding: 1em 2em;
+}
+#result h2 {
+  font-size: 2rem;
+  animation: color-change 2s infinite;
+  box-shadow: 0 0 10px #111715;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+  .max-w-md {
+    max-width: 300px;
+  }
+}

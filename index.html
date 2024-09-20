@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de un videojuego</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Css/pagina.css" />
+  </head>
+  <body>
+    <div class="max-w-md">
+      <header>
+        <img src="calculator-flat-icon-by-Vexels.png" height="60px" />
+      </header>
+      <h2>Calculadora</h2>
+      <div class="mb-4">
+        <label for="misiones">Tus misiones completadas:</label>
+        <input type="number" id="misiones" value="0" />
+      </div>
+
+      <div class="mb-4">
+        <label for="enemigos">Tus enemigos vencidos:</label>
+        <input type="number" id="enemigos" value="0" />
+      </div>
+
+      <div class="mb-4">
+        <label for="rewardType">Combo:</label>
+        <select id="rewardType">
+          <option value="mon">Monedas de oro</option>
+          <option value="gem">Gemas</option>
+          <option value="xp">Puntos de experiencia</option>
+        </select>
+      </div>
+
+      <button onclick="calculate()">Calcular</button>
+      <div id="result"></div>
+      <script src="Calc.js"></script>
+    </div>
+  </body>
+</html>
